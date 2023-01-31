@@ -1,0 +1,356 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Anton';
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+
+}
+body{
+    font-family: 'Space Mono' monospace;
+    background: rgb(14, 165, 150);
+}
+header{
+    width: 100%;
+    height: 430px;
+    background-image: url(img/imagen-fondo.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-shadow:5px 5px 3px #047c76, 3px 3px 5px #070791;
+    text-align: center;
+    overflow: hidden;
+    display: block;
+}
+.menu{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #069e80;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px blue;
+    z-index: 1;
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    width: 20vw;
+    height: 100%;
+    background-image: linear-gradient(to top, #96f7ef 0%, #06a5b1 100%);
+    background-image: linear-gradient(35deg, #69f3fd 0%, #07048b 100%);
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    right: 0%;
+    transform: translateX(110%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 3px rgb(0, 0, 0 3);
+}
+.spread{
+    transform: translateX(0);
+}
+.menu-navegacion a{
+    font-family: 'Space Mono';
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.header h1{
+    font-size: 40px;
+    color: white;
+    font-weight: 100;
+}
+
+.inicio .contenido-banner{
+    max-width: 380px;
+    margin: auto;
+    margin-top: -385px;
+    text-align: center;  
+}
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid #1CB698;
+    display: block;
+    width: 75%;
+    height: 75%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .contenido-banner h2{
+    margin-top: 4px;
+    font-size: 42px;
+    font-family: 'Anton';
+    color: white;
+    text-shadow:5px 5px 3px teal, 3px 3px 5px #070791;
+}
+.inicio .contenido-banner h3{
+    font-size: 18px;
+    font-weight: normal;
+    color: rgb(10, 190, 190);
+    text-shadow:5px 5px 3px blue, 3px 3px 5px #070791;
+}
+
+.datospers{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.dato-icono{
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 100px;
+    margin: 30px;;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    cursor: pointer;  
+}
+.datospers .dato-icono:hover{
+    background: #070791;
+}
+.datospers .dato-icono .dato{
+    width: 100%;
+    margin-bottom: 5px;
+    color: #fff;
+    font-family: 'Mono Space';
+    font-weight: 400;
+
+}
+.perfil_profesional h3{
+    margin: 15px;
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+
+}
+.perfil_profesional p{
+    font: 18px;
+    font-family: 'Space Mono';
+    color: black;
+    line-height: 22px;
+    margin-bottom: 20px;
+    
+}
+.perfil_profesional{
+    background-color: rgb(13, 143, 143);
+    padding: 5px;
+    border-radius: 20px;
+    
+}
+
+.perfil .fila{
+    display: flex;
+}
+.perfil .fila .col{
+    width: 100%;
+    padding: 15px;
+
+}
+.perfil .fila .col h3{
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Space Mono';
+    margin-bottom: 15px;
+}
+
+.perfil .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.perfil .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #234ac9;
+    border-radius: 10px;
+    margin: 0px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.perfil .fila .col .contenedor-intereses .interes:hover{
+    background-color: #01757e;
+}
+.perfil .col .contenedor-habilidades .habilidades i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.perfil .col .contenedor-habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.perfil .col .contenedor-habilidades .habilidades{
+    width: 100px;
+    height: 100px;
+    background-color: #03727a;
+    border-radius: 10px;
+    margin: 0 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s;
+}
+.perfil .col .contenedor-habilidades .habilidades:hover{
+    background-color: #234ac9;
+}
+.perfil .col .contenedor-habilidades .habilidades i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.curriculum{
+    background-color: #0433b64d;
+    color: #fff;
+    padding: 50px 20px;
+}
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+
+}
+.curriculum .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.curriculum .fila .col{
+    width: 49%;
+    padding: 0 20px;
+
+}
+.curriculum .fila .col h3{
+    font-size: 28px;
+    font-family: 'Space Mono';
+    margin-bottom: 25px;
+}
+.curriculum .fila .izquierda{
+    border-right: 2px solid #012a4b;
+}
+.curriculum .fila .derecha{
+    border-left: 2px solid  #012a4b;
+}
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color:  #012a4b;
+    position: relative;
+    border-radius: 10%;
+}
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item .institucion{
+    color: #1CB698;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.curriculum .fila .item .fecha{
+    display: block;
+    color: #1CB698;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item p{
+    line-height: 24px;
+}
+.curriculum .fila .izq{
+    border-right: 2px solid #1CB698;
+    margin-right: 20px;
+}
+.curriculum .fila .der{
+    border-left: 2px solid #1CB698;
+    margin-left: 20px;
+}
+.curriculum .fila .item .conectori{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.curriculum .fila .item .conectord{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+.curriculum .fila .item img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    transition: 1s;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50%);
+}
+.curriculum .fila .item:hover img{
+    clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 50%);
+}
+footer .otros-contactos{
+    width: 100%;
+    height: 100px;
+    background-image: url(img/imagen-fondo.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    overflow: hidden;
+}
+footer .otros-contactos .redes a{
+    font-size: 30px;
+    margin-bottom: 50px;
+    display: inline-block;
+    line-height: 50px;
+    margin: 0px 15px;
+    transition: 0.1s;
+}
+footer .otros-contactos .redes a:hover{
+    width: 50px;
+    height: 50px;
+    background-color: #1be0e0;
+    border-radius: 100%;
+}
